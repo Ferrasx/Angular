@@ -1,0 +1,15 @@
+<div class = "text-center mt-3 mb-3">
+  <form>
+    <input
+      class="rounded"
+      type="search"
+      placeholder="search"
+      autofocus
+      (keyup)="onKeyUp($event.target)">
+
+  </form>
+</div>
+<app-photos [photos] = "photos | filterByDescription : filter "></app-photos>
+<app-load-button (click)="load()" [hasMore]= "hasMore"></app-load-button>
+<!--[] fonte de dados para o template  - () evento e disparado e vai da viw do template para o componente" -->
+
