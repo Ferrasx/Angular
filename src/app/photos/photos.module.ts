@@ -17,7 +17,7 @@ import { LoadButtonComponent } from './photo-list/load-button/load-button.compon
     FilterByDescription,
     LoadButtonComponent,
   ],
-  
+
 
   imports:[HttpClientModule,
   CommonModule]
